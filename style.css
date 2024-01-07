@@ -19,6 +19,11 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  opacity: 0.9;
+  text-shadow: 2px 1px rgb(221, 73, 40);
+}
+.banner:hover {
+  opacity: 1;
 }
 .banner img {
   height: 100%;
@@ -45,6 +50,10 @@
   font-family: "Inter", sans-serif;
   margin: 0 auto;
   text-align: center;
+  opacity: 0.9;
+}
+.offer:hover {
+  opacity: 1;
 }
 .offer img {
   height: 100%;
@@ -76,6 +85,10 @@
   display: grid;
   align-items: center;
   grid-template-columns: 70% 1fr;
+  opacity: 0.9;
+}
+.banner-2:hover {
+  opacity: 1;
 }
 .banner-2-text {
   padding: 100px;
@@ -83,12 +96,25 @@
 }
 .banner-2-text p {
   font-family: "Merriweather", serif;
-  font-size: 18px;
+  font-size: 32px;
+}
+.banner-2-text button {
+  background-color: rgba(211, 211, 207, 0.544);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bolder;
+  opacity: 0.8;
+}
+.banner-2-text button:hover {
+  opacity: 1;
 }
 .banner-2-text h1 {
   font-family: "Merriweather", serif;
   font-weight: 100;
   font-size: 12px;
+  padding: 5px 0px;
 }
 .banner-2-img-2 {
   width: 150px;
@@ -103,7 +129,12 @@
 }
 
 /* best-offer-date */
+.red {
+  color: red;
+}
 .best-offer-date {
+  font-size: medium;
+  font-weight: 600;
   width: 85%;
   height: 40vh;
   margin: 0 auto;
@@ -113,6 +144,15 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(174deg, #d0815f46, transparent);
+  border-radius: 10px;
+  box-shadow: 1px 2px rgb(195, 193, 193);
+}
+.best-offer-date button {
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
 }
 
 /* best-offer-banner */
@@ -126,8 +166,8 @@
   justify-items: center;
   box-shadow: currentColor;
 }
-
 .best-offer-banner-center > img {
+  border: 5px solid red;
   width: 150px;
   border-radius: 50%;
   padding: 5px;
