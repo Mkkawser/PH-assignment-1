@@ -9,7 +9,7 @@
 /* Banner Section */
 
 .banner {
-  background-image: url("/images/Banner-Image.png");
+  background-image: url("./images/Banner-Image.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 85%;
@@ -68,7 +68,7 @@
 /* banner-2 section */
 
 .banner-2 {
-  background-image: url("/images/Vectorrr.png");
+  background-image: url("./images/Vectorrr.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 85%;
