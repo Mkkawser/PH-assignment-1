@@ -51,7 +51,6 @@
   font-family: "Inter", sans-serif;
   margin: 20px auto;
   text-align: center;
-  
 }
 .offer img:hover {
   opacity: 1;
@@ -181,7 +180,7 @@
   border: 6px solid red;
   width: 180px;
   border-radius: 50%;
-  padding: 5px;
+  padding: 8px;
 }
 .best-offer-banner-right {
   display: flex;
@@ -235,17 +234,23 @@ small {
 }
 .holiday-sale-images-percent {
   position: absolute;
-  top: 90px;
-  right: 105px;
+  top: 44px;
+  right: 207px;
+  width: 235px;
+  z-index: 1;
 }
 .holiday-sale-images-flower {
   width: 60%;
+  z-index: 1;
 }
 .holiday-sale-images-girls {
   width: 40%;
+  z-index: 0;
 }
 .holiday-sale-images-rec {
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 /* gift area */
@@ -261,7 +266,7 @@ small {
 .gift-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 .gift-text h1 {
   padding: 10px 0;
@@ -269,7 +274,7 @@ small {
 .gift-text small {
   opacity: 0.8;
   padding-bottom: 10px;
-  text-align: center;
+  text-align: justify;
 }
 .gift-card img {
   height: 100%;
@@ -285,7 +290,7 @@ small {
 .newsletter {
   display: flex;
   width: 85%;
-  height: 50vh;
+  height: 60vh;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
@@ -316,16 +321,16 @@ small {
   border: none;
   padding: 15px;
   outline: none;
-  border-top-left-radius:15px ;
-  border-bottom-left-radius:15px ;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .newsletter-submit button {
   border: none;
   background: red;
   color: white;
   padding: 14px;
-  border-top-right-radius:15px ;
-  border-bottom-right-radius:15px ;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .newsletter img {
   width: 75px;
@@ -336,7 +341,7 @@ small {
   padding: 30px;
   background-color: #070211;
   color: white;
-  font-family: "Inter", sans-serif;;
+  font-family: "Inter", sans-serif;
 }
 .footer hr {
   opacity: 0.3;
@@ -367,7 +372,37 @@ small {
   padding: 5px;
 }
 
-.footer-bottom small{
+.footer-bottom small {
   color: white;
   font-weight: 100;
+}
+
+/* Responsive Design */
+
+@media all and (max-width: 600px) {
+  .banner {
+    height: 40vh;
+  }
+  .banner-2-text p {
+    font-size: 14px;
+  }
+  .banner-2-img-2 {
+    width: 80px;
+  }
+  .banner-2 h1 {
+    font-size: 10px;
+  }
+  .banner-2-text button {
+    padding: 4px;
+  }
+  .best-offer-banner small {
+    font-size: 12px;
+  }
+  .holiday-sale-images-percent {
+    width: 150px;
+    right: 90px;
+  }
+  .newsletter {
+    height: 75vh;
+  }
 }
