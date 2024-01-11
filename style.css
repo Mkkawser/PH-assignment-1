@@ -6,14 +6,19 @@
   box-sizing: border-box;
 }
 
+.red {
+  color: red;
+}
+.hide {
+  display: none;
+}
+
 /* Banner Section */
 
 .banner {
   background-image: url("./images/Banner-Image.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 85%;
-  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,30 +27,36 @@
   opacity: 0.9;
   text-shadow: 2px 1px rgb(221, 73, 40);
   margin: 15px 0;
+  background-size: 90vw;
+  height: 50vw;
 }
+
 .banner:hover {
   opacity: 1;
 }
+
 .banner img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+
 .banner p {
   font-family: "Merriweather", serif;
   color: white;
-  font-size: calc(20px + 0.390625vw);
+  font-size: 5vw;
 }
+
 .banner h1 {
   font-family: "Merriweather", serif;
   color: white;
-  font-size: calc(30px + 0.390625vw);
+  font-size: 6vw;
 }
 
 /* Offer Section */
 
 .offer {
-  width: 50%;
+  width: 80vw;
   overflow: hidden;
   color: red;
   font-family: "Inter", sans-serif;
@@ -58,20 +69,21 @@
 .offer img {
   opacity: 0.9;
   height: 100%;
-  width: 80%;
+  width: 70vw;
   object-fit: cover;
 }
 .offer-title-1 {
-  font-size: 40px;
+  font-size: 10vw;
   font-weight: 900;
 }
 .offer-title-2 {
-  font-size: 13px;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  font-size: 2.5vw;
+  padding-top: 1.2vw;
+  padding-bottom: 4vw;
 }
 .offer-title-3 {
-  font-size: 22px;
+  font-size: 4vw;
+  padding-bottom: 1vw;
   color: #070211;
 }
 
@@ -81,28 +93,27 @@
   background-image: url("./images/Vectorrr.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 85%;
-  height: 70vh;
+  background-size: 90vw;
+  height: 50vw;
   display: grid;
   align-items: center;
   grid-template-columns: 70% 1fr;
   opacity: 0.9;
-  margin: 20px 0;
 }
 .banner-2:hover {
   opacity: 1;
 }
 .banner-2-text {
-  padding: 100px;
+  padding: 6vw 0px 10vw 10vw;
   color: white;
 }
 .banner-2-text p {
   font-family: "Merriweather", serif;
-  font-size: 32px;
+  font-size: 5vw;
 }
 .banner-2-text button {
   background-color: rgba(211, 211, 207, 0.544);
-  padding: 10px;
+  padding: 1.8vw;
   border: none;
   border-radius: 5px;
   color: #ffffff;
@@ -115,12 +126,12 @@
 .banner-2-text h1 {
   font-family: "Merriweather", serif;
   font-weight: 100;
-  font-size: 12px;
+  font-size: 2vw;
   padding: 5px 0px;
   opacity: 0.8;
 }
 .banner-2-img-2 {
-  width: 150px;
+  width: 20vw;
 }
 .banner-2 .banner-2 p {
   font-family: "Merriweather", serif;
@@ -132,14 +143,12 @@
 }
 
 /* best-offer-date */
-.red {
-  color: red;
-}
+
 .best-offer-date {
-  font-size: medium;
+  font-size: 3.4vw;
   font-weight: 600;
-  width: 85%;
-  height: 40vh;
+  width: 85vw;
+  height: 35vh;
   margin: 0 auto;
   display: flex;
   gap: 8px;
@@ -150,6 +159,7 @@
   border-radius: 10px;
   box-shadow: 1px 2px rgb(195, 193, 193);
 }
+
 .best-offer-date button {
   background-color: red;
   border: none;
@@ -160,8 +170,8 @@
 
 /* best-offer-banner */
 .best-offer-banner {
-  width: 85%;
-  padding-top: 10%;
+  width: 85vw;
+  padding-top: 6vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -169,33 +179,41 @@
 }
 .best-offer-banner-left p {
   color: red;
+  font-size: 2.4vw;
+}
+.best-offer-banner-left h1 {
+  font-size: 4vw;
+  padding: 1.5vw 0;
 }
 .best-offer-banner-left small {
+  font-size: 3vw;
   opacity: 0.8;
 }
 .best-offer-banner-center {
   align-self: center;
 }
 .best-offer-banner-center > img {
-  border: 6px solid red;
-  width: 180px;
-  border-radius: 50%;
+  width: 30vw;
   padding: 8px;
 }
 .best-offer-banner-right {
   display: flex;
   flex-direction: column;
 }
+.best-offer-banner-right h1 {
+  font-size: 5vw;
+}
 .best-offer-banner-right small {
   opacity: 0.8;
+  font-size: 3vw;
 }
 .best-offer-banner-right img {
-  width: 80px;
+  width: 10vw;
 }
 
 /* holiday-sales */
 .holiday-sales {
-  width: 85%;
+  width: 85vw;
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -215,15 +233,18 @@
 small {
   font-family: "Inter", sans-serif;
   color: #070211;
+  font-size: 2.5vw;
 }
 .holiday-sale-text-area small {
   opacity: 0.8;
   text-align: center;
+  font-size: 2vw;
 }
 
 .holiday-sale-text-area h1 {
   font-family: "Merriweather", serif;
   padding: 10px 0;
+  font-size: 5vw;
 }
 
 .holiday-sale-images {
@@ -234,9 +255,9 @@ small {
 }
 .holiday-sale-images-percent {
   position: absolute;
-  top: 44px;
-  right: 207px;
-  width: 235px;
+  top: 4vw;
+  right: 18vw;
+  width: 30vw;
   z-index: 1;
 }
 .holiday-sale-images-flower {
@@ -255,12 +276,12 @@ small {
 
 /* gift area */
 .gift-area {
-  width: 85%;
+  width: 85vw;
   margin: 0 auto;
 }
 .gift-card {
   display: grid;
-  gap: 15px;
+  gap: 10px;
   grid-template-columns: repeat(3, 1fr);
 }
 .gift-text {
@@ -268,11 +289,16 @@ small {
   flex-direction: column;
   align-items: flex-start;
 }
+.gift-text p {
+  font-size: 3vw;
+}
 .gift-text h1 {
-  padding: 10px 0;
+  font-size: 7vw;
+  padding: 3px 0;
 }
 .gift-text small {
   opacity: 0.8;
+  width: 80vw;
   padding-bottom: 10px;
   text-align: justify;
 }
@@ -289,8 +315,8 @@ small {
 /* newsletter */
 .newsletter {
   display: flex;
-  width: 85%;
-  height: 60vh;
+  width: 85vw;
+  height: 60vw;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
@@ -303,6 +329,7 @@ small {
   box-shadow: 2px #ffff;
 }
 .newsletter h1 {
+  font-size: 7vw;
   padding: 15px 0;
   font-family: "Merriweather", serif;
 }
@@ -319,7 +346,9 @@ small {
 }
 .newsletter-submit input {
   border: none;
-  padding: 15px;
+  width: 28vw;
+  padding-left: 5px;
+  font-size: 2vw;
   outline: none;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -333,7 +362,7 @@ small {
   border-bottom-right-radius: 15px;
 }
 .newsletter img {
-  width: 75px;
+  width: 8vw;
 }
 
 /* footer */
@@ -350,6 +379,10 @@ small {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+.footer-address p {
+  font-size: 2vw;
 }
 
 .footer-address-1,
@@ -357,13 +390,19 @@ small {
   display: flex;
   padding: 5px;
 }
+
+.footer-address-1 img,
+.footer-address-2 img {
+  width: 3.5vw;
+}
+
 .footer-social {
   display: flex;
   justify-content: center;
   padding: 15px;
 }
 .footer-social img {
-  width: 35px;
+  width: 8vw;
   padding: 5px;
 }
 .footer-bottom {
@@ -375,34 +414,46 @@ small {
 .footer-bottom small {
   color: white;
   font-weight: 100;
+  font-size: 2vw;
 }
 
 /* Responsive Design */
+/* X-Small devices (portrait phones, less than 576px
+) */
 
-@media all and (max-width: 600px) {
-  .banner {
-    height: 40vh;
+/* Extra Small devices (landscape phones, 320px and up) */
+@media (min-width: 320px) {
+  .best-offer-banner {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .banner-2-text p {
-    font-size: 14px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .best-offer-banner {
+    grid-template-columns: repeat(3, 1fr);
   }
-  .banner-2-img-2 {
-    width: 80px;
+  .best-offer-banner-right {
+    padding-left: 25px;
   }
-  .banner-2 h1 {
-    font-size: 10px;
+  .best-offer-banner-center > img {
+    border: 6px solid red;
+    border-radius: 50%;
   }
-  .banner-2-text button {
-    padding: 4px;
-  }
-  .best-offer-banner small {
-    font-size: 12px;
-  }
-  .holiday-sale-images-percent {
-    width: 150px;
-    right: 90px;
-  }
-  .newsletter {
-    height: 75vh;
-  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
